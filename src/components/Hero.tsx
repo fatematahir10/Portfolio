@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         ))}
       </div>
 
-      <p className="text-lg max-w-8xl leading-relaxed text-gray-200">
+      <p className="text-lg max-w-6xl leading-relaxed text-gray-200">
       I’m a results-driven software developer with a strong foundation in C#, .NET, and WPF, specializing in building modern, efficient, and user-friendly desktop applications. With over two years of remote development experience, I’ve successfully designed and delivered scalable solutions using clean MVVM architecture, intuitive UI design, and performance optimization techniques. I thrive in creating practical tools that solve real-world problems. My approach combines clean code, maintainable architecture, and a passion for continuous learning. 
       </p>
     </section>

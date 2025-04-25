@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
   return (
-            <section
+            <nav
             id="navbar"
             className="fixed top-0 left-0 w-full z-50 py-4 bg-black px-6 shadow-md"
         >
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           View on Upwork
         </a>
             </div>
-            </section>
+            </nav>
   );
 };
 
