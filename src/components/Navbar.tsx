@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   
             <div className="flex justify-end gap-6">
                 <a
-                href="public/Resume.pdf"
+                href="/Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-pink-400 text-pink-300 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300"
                 >
