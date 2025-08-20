@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-black text-white py-16 px-6 text-center">
+    <section className="py-16 px-6 text-center">
       <h2 className="text-4xl font-bold text-cyan-400 mb-10">Testimonials</h2>
       <div className="space-y-8 max-w-6xl mx-auto relative">
 

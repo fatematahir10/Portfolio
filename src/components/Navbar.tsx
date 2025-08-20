@@ -4,7 +4,7 @@ const Navbar: React.FC = () => {
   return (
           <nav
           id="navbar"
-          className="fixed top-0 left-0 w-full z-50 py-4 bg-black px-6 shadow-md"
+          className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-white"
           >
             <div className="flex justify-end gap-6">
                 <a

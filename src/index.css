@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-white;
+  @apply bg-white text-black border-black;
   font-family: 'Arial', sans-serif;
 }
 
@@ -16,7 +16,7 @@ h1, h2, h3 {
   display: none;
 }
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 

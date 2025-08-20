@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-6 mt-16">
+    <footer className="py-6 mt-16">
       <div className="flex justify-center gap-8 flex-wrap">
         <a
           href="https://github.com/fatematahir10"
