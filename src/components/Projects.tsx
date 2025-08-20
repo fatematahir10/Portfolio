@@ -19,9 +19,9 @@ const Projects: React.FC = () => {
   const projectList = [
     {
       title: 'WPF Utilities Suite',
-      tech: ['C#', 'WPF', 'AES Encryption'],
+      tech: ['C#', 'WPF', 'Encryption', 'WiX Toolset'],
       color: 'pink',
-      text: 'A suite of desktop tools designed for efficient data processing, encryption, file operations, and multithreading — featuring modern, responsive WPF UI components.'
+      text: 'A suite of desktop tools designed for efficient data processing, encryption, file operations, and multithreading, featuring modern, responsive WPF UI components.'
     },
     {
       title: 'Tracking & Analytics Portal',
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'Ad Blocking Tool',
-      tech: ['C#', '.NET Framework', 'WinForms', 'Services'],
+      tech: ['C#', '.NET Framework', 'WinForms', 'Window Services'],
       color: 'pink',
       text: 'Created a multithreaded desktop application and Windows service to block ads system-wide. Includes a setup project, logging mechanisms, and a real-time dashboard.'
     },
