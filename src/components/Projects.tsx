@@ -42,13 +42,13 @@ const Projects: React.FC = () => {
       text: 'Developed real-time face detection and recognition modules with high accuracy using deep learning frameworks. Optimized for performance and cross-platform use.'
     },
     {
-      title: 'Ad Blocking & Monitoring Tool',
+      title: 'Ad Blocking Tool',
       tech: ['C#', '.NET Framework', 'WinForms', 'Services'],
       color: 'pink',
       text: 'Created a multithreaded desktop application and Windows service to block ads system-wide. Includes a setup project, logging mechanisms, and a real-time dashboard.'
     },
     {
-      title: 'SnapSortApp',
+      title: 'Snap Sort App',
       tech: ['C#', 'WPF', 'SQLite'],
       color: 'purple',
       text: 'A powerful image sorting desktop application with drag-and-drop features, automatic file categorization, duplicate detection, and a modern MVVM architecture.'
