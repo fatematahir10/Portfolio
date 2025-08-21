@@ -19,7 +19,7 @@ const Testimonials: React.FC = () => {
               href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 top-1 text-cyan-300 hover:text-white transition"
+              className="absolute right-0 top-1 text-cyan-300 hover:text-black transition"
             >
               <FaExternalLinkAlt />
             </a>
@@ -37,7 +37,7 @@ const Testimonials: React.FC = () => {
               href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 top-1 text-pink-300 hover:text-white transition"
+              className="absolute right-0 top-1 text-pink-300 hover:text-black transition"
             >
               <FaExternalLinkAlt />
             </a>
