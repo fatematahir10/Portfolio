@@ -45,7 +45,7 @@ const projectList = [
       title: 'Ad Blocking Tool',
       tech: ['C#', '.NET Framework', 'WinForms', 'Window Services'],
       color: 'pink',
-      image: 'adBlocking.png',
+      image: 'adblocker.png',
       text: 'Created a multithreaded desktop application and Windows service to block ads system-wide. Includes a setup project, logging mechanisms, and a real-time dashboard.'
     },
     // {
