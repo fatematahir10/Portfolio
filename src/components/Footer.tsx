@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           href="https://github.com/fatematahir10"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-b-2 border-pink-400 text-pink-300 hover:text-black hover:border-black transition"
+          className="border-b-2 border-pink-400 text-pink-400 hover:text-black hover:border-black transition"
         >
           GitHub
         </a>
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           href="https://linkedin.com/in/fatematahir"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-b-2 border-cyan-400 text-cyan-300 hover:text-black hover:border-black transition"
+          className="border-b-2 border-cyan-400 text-cyan-400 hover:text-black hover:border-black transition"
         >
           LinkedIn
         </a>
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           href="https://www.upwork.com/freelancers/fatematahir"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-b-2 border-green-400 text-green-300 hover:text-black hover:border-black transition"
+          className="border-b-2 border-green-400 text-green-400 hover:text-black hover:border-black transition"
         >
           Upwork
         </a>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           href="https://stackoverflow.com/users/10075400/fatima-ali"
           target="_blank"
           rel="noopener noreferrer"
-          className="border-b-2 border-purple-400 text-purple-300 hover:text-black hover:border-black transition"
+          className="border-b-2 border-purple-400 text-purple-400 hover:text-black hover:border-black transition"
         >
           Stack Overflow
         </a>
