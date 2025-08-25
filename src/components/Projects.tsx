@@ -38,23 +38,23 @@ const projectList = [
       title: 'Face Recognition AI',
       tech: ['Python', 'Dlib', 'TensorFlow', 'MTCNN'],
       color: 'cyan',
-      image: 'facerecognition.png',
+      image: 'facerecoginition.png',
       text: 'Developed real-time face detection and recognition modules with high accuracy using deep learning frameworks. Optimized for performance and cross-platform use.'
     },
     {
       title: 'Ad Blocking Tool',
       tech: ['C#', '.NET Framework', 'WinForms', 'Window Services'],
       color: 'pink',
-      image: 'adblocking.png',
+      image: 'adBlocking.png',
       text: 'Created a multithreaded desktop application and Windows service to block ads system-wide. Includes a setup project, logging mechanisms, and a real-time dashboard.'
     },
-    {
-      title: 'Snap Sort App',
-      tech: ['C#', 'WPF', 'SQLite'],
-      color: 'purple',
-      image: 'snapsort.png',
-      text: 'A powerful image sorting desktop application with drag-and-drop features, automatic file categorization, duplicate detection, and a modern MVVM architecture.'
-    }
+    // {
+    //   title: 'Snap Sort App',
+    //   tech: ['C#', 'WPF', 'SQLite'],
+    //   color: 'purple',
+    //   image: 'snapsort.png',
+    //   text: 'A powerful image sorting desktop application with drag-and-drop features, automatic file categorization, duplicate detection, and a modern MVVM architecture.'
+    // }
   ];
   
 
