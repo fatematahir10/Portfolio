@@ -7,7 +7,15 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow">
       <div className="flex items-center justify-between px-6 py-4">
-        <h1 className="text-lg font-bold text-cyan-600">Fatima Ali</h1>
+        <div className="relative w-12 h-12">
+          <img 
+            src="/logo.png" 
+            alt="Logo" 
+            className="w-full h-full rounded-full object-cover" 
+          />
+          <span className="absolute top-0 right-0 block w-3 h-3 bg-green-500 rounded-full"></span>
+          <span className="absolute top-0 right-0 block w-3 h-3 bg-green-500 rounded-full animate-ping"></span>
+        </div>
 
         {/* Hamburger Button */}
         <button
