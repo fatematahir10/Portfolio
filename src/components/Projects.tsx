@@ -87,11 +87,11 @@ const Projects: React.FC = () => {
                 {proj.title}
               </h3>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-4 mt-4">
                 {proj.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="border-2 border-black-400 text-xs px-3 py-1 rounded-md"
+                    className="border-2 border-black-400 text-xs font-semibold px-3 py-1 rounded-md"
                   >
                     {tech}
                   </span>
