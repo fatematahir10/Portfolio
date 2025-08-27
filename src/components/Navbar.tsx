@@ -1,36 +1,75 @@
-import React from 'react';
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar: React.FC = () => {
-  return (
-          <nav
-          id="navbar"
-          className="fixed top-0 left-0 w-full z-50 py-4 px-6 bg-white"
-          >
-            <div className="flex justify-end gap-6">
-                <a
-                href="/Resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-pink-400 text-pink-400 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300"
-                >
-                Download Resume
-                </a>
+  const [isOpen, setIsOpen] = useState(false);
 
-                <a
-                href="mailto:fatematahir96@example.com"
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-green-400 text-green-400 font-semibold rounded-xl hover:bg-green-500 hover:text-black transition-all duration-300"
-                >
-                Let's Connect
-                </a>
-                <a
-                href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-purple-400 text-purple-400 font-semibold rounded-xl hover:bg-purple-500 hover:text-black transition-all duration-300"
-                >
-                View on Upwork
-              </a>
-            </div>
-          </nav>
+  return (
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow">
+      <div className="flex items-center justify-between px-6 py-4">
+        <h1 className="text-lg font-bold text-cyan-600">Fatima Ali</h1>
+
+        {/* Hamburger Button */}
+        <button
+          className="sm:hidden text-2xl text-gray-700"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
+
+        {/* Desktop Menu */}
+        <div className="hidden sm:flex gap-6">
+          <a
+            href="/Resume.pdf"
+            download
+            className="px-4 py-2 border-2 border-pink-400 text-pink-400 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300"
+          >
+            Download Resume
+          </a>
+          <a
+            href="mailto:fatematahir96@example.com"
+            className="px-4 py-2 border-2 border-green-400 text-green-400 font-semibold rounded-xl hover:bg-green-500 hover:text-black transition-all duration-300"
+          >
+            Let's Connect
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border-2 border-purple-400 text-purple-400 font-semibold rounded-xl hover:bg-purple-500 hover:text-black transition-all duration-300"
+          >
+            View on Upwork
+          </a>
+        </div>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <div className="flex flex-col items-center gap-4 pb-6 sm:hidden">
+          <a
+            href="/Resume.pdf"
+            download
+            className="px-4 py-2 border-2 border-pink-400 text-pink-400 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+          >
+            Download Resume
+          </a>
+          <a
+            href="mailto:fatematahir96@example.com"
+            className="px-4 py-2 border-2 border-green-400 text-green-400 font-semibold rounded-xl hover:bg-green-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+          >
+            Let's Connect
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border-2 border-purple-400 text-purple-400 font-semibold rounded-xl hover:bg-purple-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+          >
+            View on Upwork
+          </a>
+        </div>
+      )}
+    </nav>
   );
 };
 
