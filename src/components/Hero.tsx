@@ -3,7 +3,7 @@ import TypingEffect from "./TypeEffect";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-28 text-left">
+    <section className="min-h-screen  max-w-6xl mx-auto relative flex flex-col justify-center px-6 py-28 text-left">
       <h1 className="text-6xl md:text-8xl font-bold text-blue-400 mb-6">
         Hi, I'm <span className="text-cyan-500">Fatima Ali</span>
       </h1>
@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         I am a passionate{" "}
         <TypingEffect
           strings={["C# Developer", ".NET Expert", "React Learner"]}
-          className="text-gray-600"
+          className="text-pink-600"
         />
       </h2>
 

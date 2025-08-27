@@ -8,7 +8,6 @@ const Testimonials: React.FC = () => {
       <h2 className="text-4xl font-bold text-cyan-400 mb-10">Testimonials</h2>
       <div className="space-y-8 max-w-6xl mx-auto relative">
 
-        {/* Testimonial 1 */}
         <div className="border-2 border-cyan-400 p-6 rounded-lg relative">
           <p className="text-base">
             "Fatima worked on WPF desktop applications for our company. She did a great job and worked on the projects in a very steady and reliable way, not getting tired of doing long-running projects and getting some tricky code done as well. Fatima is also a great communicator, and easy and fun to work with! Thanks, Fatima!"
@@ -26,7 +25,6 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
 
-        {/* Testimonial 2 */}
         <div className="border-2 border-pink-400 p-6 rounded-lg relative">
           <p className="text-base">
             "Like said in the feedback before: great work, thanks, Fatima!"
