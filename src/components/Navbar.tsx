@@ -22,13 +22,13 @@ const Navbar: React.FC = () => {
           <a
             href="/Resume.pdf"
             download
-            className="px-4 py-2 border-2 border-pink-400 text-pink-400 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300"
+            className="px-4 py-2 border-2 text-sm border-pink-400 text-pink-400 font-semibold rounded-md hover:bg-pink-500 hover:text-black transition-all duration-300"
           >
             Download Resume
           </a>
           <a
             href="mailto:fatematahir96@example.com"
-            className="px-4 py-2 border-2 border-green-400 text-green-400 font-semibold rounded-xl hover:bg-green-500 hover:text-black transition-all duration-300"
+            className="px-4 py-2 border-2 text-sm border-green-400 text-green-400 font-semibold rounded-md hover:bg-green-500 hover:text-black transition-all duration-300"
           >
             Let's Connect
           </a>
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
             href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 border-2 border-purple-400 text-purple-400 font-semibold rounded-xl hover:bg-purple-500 hover:text-black transition-all duration-300"
+            className="px-4 py-2 border-2 text-sm border-purple-400 text-purple-400 font-semibold rounded-md hover:bg-purple-500 hover:text-black transition-all duration-300"
           >
             View on Upwork
           </a>
@@ -49,13 +49,13 @@ const Navbar: React.FC = () => {
           <a
             href="/Resume.pdf"
             download
-            className="px-4 py-2 border-2 border-pink-400 text-pink-400 font-semibold rounded-xl hover:bg-pink-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+            className="px-4 py-2 border-2 text-sm border-pink-400 text-pink-400 font-semibold rounded-md hover:bg-pink-500 hover:text-black transition-all duration-300 w-3/4 text-center"
           >
             Download Resume
           </a>
           <a
             href="mailto:fatematahir96@example.com"
-            className="px-4 py-2 border-2 border-green-400 text-green-400 font-semibold rounded-xl hover:bg-green-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+            className="px-4 py-2 border-2 text-sm border-green-400 text-green-400 font-semibold rounded-md hover:bg-green-500 hover:text-black transition-all duration-300 w-3/4 text-center"
           >
             Let's Connect
           </a>
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 border-2 border-purple-400 text-purple-400 font-semibold rounded-xl hover:bg-purple-500 hover:text-black transition-all duration-300 w-3/4 text-center"
+            className="px-4 py-2 border-2 text-sm border-purple-400 text-purple-400 font-semibold rounded-md hover:bg-purple-500 hover:text-black transition-all duration-300 w-3/4 text-center"
           >
             View on Upwork
           </a>
