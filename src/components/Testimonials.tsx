@@ -14,14 +14,14 @@ const Testimonials: React.FC = () => {
           </p>
           <div className="mt-4 relative">
             <span className="block text-cyan-400 font-semibold">– Long-term client</span>
-            <a
+            {/* <a
               href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute right-0 top-1 text-cyan-400 hover:text-black transition"
             >
               <FaExternalLinkAlt />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -31,14 +31,14 @@ const Testimonials: React.FC = () => {
           </p>
           <div className="mt-4 relative">
             <span className="block text-pink-400 font-semibold">– Long-term client</span>
-            <a
+            {/* <a
               href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute right-0 top-1 text-pink-400 hover:text-black transition"
             >
               <FaExternalLinkAlt />
-            </a>
+            </a> */}
           </div>
         </div>
 
