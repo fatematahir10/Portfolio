@@ -22,14 +22,6 @@ const Footer: React.FC = () => {
           LinkedIn
         </a>
         <a
-          href="https://www.upwork.com/freelancers/fatematahir"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-b-2 border-green-400 text-green-400 hover:text-black hover:border-black transition"
-        >
-          Upwork
-        </a>
-        <a
           href="https://stackoverflow.com/users/10075400/fatima-ali"
           target="_blank"
           rel="noopener noreferrer"

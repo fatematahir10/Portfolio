@@ -40,14 +40,6 @@ const Navbar: React.FC = () => {
           >
             Let's Connect
           </a>
-          {/* <a
-            href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 border-2 text-sm border-purple-400 text-purple-400 font-semibold rounded-md hover:bg-purple-500 hover:text-black transition-all duration-300"
-          >
-            View on Upwork
-          </a> */}
         </div>
       </div>
 
@@ -67,14 +59,6 @@ const Navbar: React.FC = () => {
           >
             Let's Connect
           </a>
-          {/* <a
-            href="https://www.upwork.com/freelancers/fatematahir?mp_source=share"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 border-2 text-sm border-purple-400 text-purple-400 font-semibold rounded-md hover:bg-purple-500 hover:text-black transition-all duration-300 w-3/4 text-center"
-          >
-            View on Upwork
-          </a> */}
         </div>
       )}
     </nav>
