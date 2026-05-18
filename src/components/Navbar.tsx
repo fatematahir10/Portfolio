@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden sm:flex gap-6">
           <a
-            href="/Resume.pdf"
+            href="/Fatima-NetDeveloper.pdf"
             download
             className="px-4 py-2 border-2 text-sm border-pink-400 text-pink-400 font-semibold rounded-md hover:bg-pink-500 hover:text-black transition-all duration-300"
           >
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="flex flex-col items-center gap-4 pb-6 sm:hidden">
           <a
-            href="/Resume.pdf"
+            href="/Fatima-NetDeveloper.pdf"
             download
             className="px-4 py-2 border-2 text-sm border-pink-400 text-pink-400 font-semibold rounded-md hover:bg-pink-500 hover:text-black transition-all duration-300 w-3/4 text-center"
           >
