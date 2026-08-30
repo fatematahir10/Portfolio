@@ -38,28 +38,12 @@ const projectList = [
       text: "Developed a multithreaded ad-blocking solution combining a desktop UI with a Windows Service for system-wide filtering and monitoring."
     },
     {
-      category: "Web",
-      title: "Tracking & Analytics Portal",
-      tech: ["C#", "ASP.NET MVC", "Javascript", "SQL Server"],
-      color: "purple",
-      image: "tracking.png",
-      text: "Engineered a secure ASP.NET MVC portal with authentication, real-time analytics dashboards, and AI-powered face recognition integration."
-    },
-    {
       category:"Desktop",
       title: "Face Recognition AI",
       tech: ["Python", "Dlib", "TensorFlow", "MTCNN"],
       color: "cyan",
       image: "facerecoginition.png",
       text: "Developed real-time face detection and recognition modules with deep learning, optimized for cross-platform performance."
-    },
-    {
-    category: "Web",
-    title: "Personal Portfolio Website",
-    tech: ["React", "TypeScript", "TailwindCSS", ".NET"],
-    color: "yellow",
-    image: "portfolio.png",
-    text: "A modern, interactive portfolio website built by me using React, TypeScript and TailwindCSS. It showcases my projects, animations, and professional journey with a clean and responsive design."
     }
   ];
 
@@ -74,7 +58,7 @@ const Projects: React.FC = () => {
       <h2 className="text-4xl font-bold text-cyan-400 mb-16 text-center">
         Projects
       </h2>
-      {["Desktop", "Web"].map((category) => (
+      {["Desktop"].map((category) => (
         <div key={category} className="mb-20">
           <h3 className="text-2xl font-bold text-gray-700 mb-10 text-center">
             {category} Applications
