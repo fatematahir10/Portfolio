@@ -1,39 +1,23 @@
-// src/components/Footer.tsx
-import React from 'react';
+import React from "react";
+import { profile } from "../data/resume";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-6 mt-16">
-      <div className="flex justify-center gap-8 flex-wrap">
+    <footer className="border-t border-rule">
+      <div className="mx-auto flex max-w-shell flex-col items-center justify-between gap-4 px-6 py-8 font-mono text-[11px] uppercase tracking-label text-ink-faint sm:flex-row lg:px-10">
+        <span>
+          © {new Date().getFullYear()} {profile.name}
+        </span>
+
+        <span className="hidden sm:block">Designed &amp; built by Fatima Ali</span>
+
         <a
-          href="https://github.com/fatematahir10"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-b-2 border-pink-400 text-pink-400 hover:text-black hover:border-black transition"
+          href="#index"
+          className="transition-colors duration-300 hover:text-blueprint"
         >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/fatematahir"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-b-2 border-cyan-400 text-cyan-400 hover:text-black hover:border-black transition"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://stackoverflow.com/users/10075400/fatima-ali"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border-b-2 border-purple-400 text-purple-400 hover:text-black hover:border-black transition"
-        >
-          Stack Overflow
+          Back to top ↑
         </a>
       </div>
-
-      <p className="text-center text-sm text-gray-500 mt-4">
-        © {new Date().getFullYear()} Fatima Ali. All rights reserved.
-      </p>
     </footer>
   );
 };

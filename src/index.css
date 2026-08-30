@@ -1,15 +1,77 @@
-/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-black border-black;
-  font-family: 'Arial', sans-serif;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background-color: rgba(11, 95, 255, 0.16);
+  }
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+@layer components {
+  /* Blueprint paper: fine dot matrix + major column rules */
+  .bp-canvas {
+    background-color: #FAFBFC;
+    background-image:
+      linear-gradient(to right, rgba(11, 95, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(11, 95, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(to right, rgba(10, 20, 36, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 20, 36, 0.035) 1px, transparent 1px);
+    background-size: 160px 160px, 160px 160px, 20px 20px, 20px 20px;
+  }
+
+  /* Hairline panel: the core surface of the whole site */
+  .bp-panel {
+    @apply relative border border-rule bg-panel;
+  }
+
+  .bp-label {
+    @apply font-mono text-[11px] uppercase tracking-label text-ink-faint;
+  }
+
+  .bp-chip {
+    @apply inline-flex items-center border border-rule bg-paper px-2.5 py-1 font-mono text-[11px] text-ink-soft transition-colors duration-200;
+  }
+
+  .bp-chip:hover {
+    @apply border-blueprint/40 text-blueprint;
+  }
+
+  /* Measurement ticks used along section rails */
+  .bp-ticks {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(10, 20, 36, 0.22) 0px,
+      rgba(10, 20, 36, 0.22) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+  }
+
+  .bp-ticks-x {
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(10, 20, 36, 0.18) 0px,
+      rgba(10, 20, 36, 0.18) 1px,
+      transparent 1px,
+      transparent 8px
+    );
+  }
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -17,6 +79,14 @@ h1, h2, h3 {
 }
 .scrollbar-hide {
   -ms-overflow-style: none;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

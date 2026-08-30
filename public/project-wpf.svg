@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="WPF utilities suite application window">
+  <defs>
+    <pattern id="g1" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0A1424" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <pattern id="G1" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M160 0H0V160" fill="none" stroke="#0B5FFF" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#FAFBFC"/>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <rect width="1600" height="1000" fill="url(#G1)"/>
+
+  <!-- registration marks -->
+  <g stroke="#0B5FFF" stroke-opacity=".55" stroke-width="2" fill="none">
+    <path d="M40 76V40h36M1524 40h36v36M1560 924v36h-36M76 960H40v-36"/>
+  </g>
+
+  <!-- application window -->
+  <g>
+    <rect x="180" y="130" width="1240" height="740" fill="#FFFFFF" stroke="#0A1424" stroke-width="2"/>
+
+    <!-- title bar -->
+    <path d="M180 190h1240" stroke="#DCE3EC" stroke-width="2"/>
+    <text x="212" y="169" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="19" letter-spacing="4" fill="#0A1424">UTILITIES SUITE</text>
+    <g fill="none" stroke="#7A8798" stroke-width="2">
+      <rect x="1298" y="153" width="14" height="14"/>
+      <rect x="1332" y="153" width="14" height="14"/>
+      <rect x="1366" y="153" width="14" height="14"/>
+    </g>
+
+    <!-- sidebar -->
+    <rect x="180" y="190" width="280" height="680" fill="#FAFBFC"/>
+    <path d="M460 190v680" stroke="#DCE3EC" stroke-width="2"/>
+
+    <rect x="180" y="228" width="4" height="42" fill="#0B5FFF"/>
+    <rect x="214" y="241" width="16" height="16" fill="none" stroke="#0B5FFF" stroke-width="2"/>
+    <text x="250" y="255" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="2" fill="#0B5FFF">HOME</text>
+
+    <rect x="214" y="331" width="16" height="16" fill="none" stroke="#7A8798" stroke-width="2"/>
+    <text x="250" y="345" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="2" fill="#3D4C63">TOOLS</text>
+
+    <rect x="214" y="421" width="16" height="16" fill="none" stroke="#7A8798" stroke-width="2"/>
+    <text x="250" y="435" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="2" fill="#3D4C63">CRYPTO</text>
+
+    <rect x="214" y="511" width="16" height="16" fill="none" stroke="#7A8798" stroke-width="2"/>
+    <text x="250" y="525" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="2" fill="#3D4C63">EXPORT</text>
+
+    <!-- main panel label -->
+    <text x="510" y="248" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" letter-spacing="3" fill="#7A8798">THROUGHPUT / MS</text>
+    <path d="M510 268h870" stroke="#DCE3EC" stroke-width="2"/>
+
+    <!-- bar chart -->
+    <g>
+      <rect x="510"  y="470" width="76" height="130" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="620"  y="410" width="76" height="190" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="730"  y="450" width="76" height="150" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="840"  y="360" width="76" height="240" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="950"  y="400" width="76" height="200" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="1060" y="300" width="76" height="300" fill="#0B5FFF" fill-opacity=".12" stroke="#0B5FFF" stroke-width="2"/>
+      <rect x="1170" y="340" width="76" height="260" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <rect x="1280" y="286" width="76" height="314" fill="#EDF1F6" stroke="#DCE3EC" stroke-width="2"/>
+      <path d="M510 600h870" stroke="#0A1424" stroke-width="2"/>
+      <!-- peak marker -->
+      <path d="M1098 300v-34M1082 266h32" stroke="#0B5FFF" stroke-width="2"/>
+    </g>
+
+    <!-- lower tiles -->
+    <g fill="#FFFFFF" stroke="#DCE3EC" stroke-width="2">
+      <rect x="510" y="650" width="420" height="180"/>
+      <rect x="960" y="650" width="420" height="180"/>
+    </g>
+    <g fill="#DCE3EC">
+      <rect x="546" y="694" width="200" height="10"/>
+      <rect x="546" y="726" width="300" height="10"/>
+      <rect x="546" y="758" width="150" height="10"/>
+      <rect x="996" y="694" width="240" height="10"/>
+      <rect x="996" y="726" width="180" height="10"/>
+      <rect x="996" y="758" width="290" height="10"/>
+    </g>
+    <rect x="546" y="694" width="70" height="10" fill="#0B5FFF"/>
+  </g>
+
+  <!-- measure ticks -->
+  <g stroke="#0A1424" stroke-opacity=".22" stroke-width="2">
+    <path d="M180 916h0M180 906v20M280 906v20M380 906v20M480 906v20M580 906v20M680 906v20M780 906v20M880 906v20M980 906v20M1080 906v20M1180 906v20M1280 906v20M1380 906v20"/>
+  </g>
+  <path d="M180 916h1240" stroke="#0A1424" stroke-opacity=".22" stroke-width="2"/>
+</svg>

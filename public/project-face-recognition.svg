@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Wireframe face with detection landmarks and confidence readout">
+  <defs>
+    <pattern id="g4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0A1424" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <pattern id="G4" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M160 0H0V160" fill="none" stroke="#0B5FFF" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <path id="skull" d="M800 258c103 0 189 82 194 196 5 116-42 219-107 283-30 30-56 63-87 63s-57-33-87-63c-65-64-112-167-107-283 5-114 91-196 194-196Z"/>
+    <clipPath id="headClip"><use href="#skull"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#FAFBFC"/>
+  <rect width="1600" height="1000" fill="url(#g4)"/>
+  <rect width="1600" height="1000" fill="url(#G4)"/>
+
+  <g stroke="#0B5FFF" stroke-opacity=".55" stroke-width="2" fill="none">
+    <path d="M40 76V40h36M1524 40h36v36M1560 924v36h-36M76 960H40v-36"/>
+  </g>
+
+  <!-- head -->
+  <use href="#skull" fill="#FFFFFF"/>
+
+  <!-- topology mesh, clipped to the head -->
+  <g clip-path="url(#headClip)" fill="none">
+    <g stroke="#0A1424" stroke-opacity=".26" stroke-width="2">
+      <path d="M590 340q210 62 420 0"/>
+      <path d="M586 410q214 66 428 0"/>
+      <path d="M590 480q210 68 420 0"/>
+      <path d="M600 550q200 68 400 0"/>
+      <path d="M616 620q184 64 368 0"/>
+      <path d="M644 690q156 58 312 0"/>
+      <path d="M686 754q114 44 228 0"/>
+    </g>
+    <g stroke="#0A1424" stroke-opacity=".18" stroke-width="2">
+      <path d="M800 250C614 330 590 640 720 810"/>
+      <path d="M800 250C676 330 660 640 754 810"/>
+      <path d="M800 250C738 330 730 640 777 810"/>
+      <path d="M800 250v560"/>
+      <path d="M800 250C862 330 870 640 823 810"/>
+      <path d="M800 250C924 330 940 640 846 810"/>
+      <path d="M800 250C986 330 1010 640 880 810"/>
+    </g>
+  </g>
+
+  <use href="#skull" fill="none" stroke="#0A1424" stroke-width="3.5"/>
+
+  <!-- facial features -->
+  <g fill="none" stroke="#0B5FFF" stroke-width="3.5" stroke-linecap="round">
+    <path d="M700 452q36-20 72-8M900 452q-36-20-72-8"/>
+    <path d="M705 496q30-20 60 0-30 20-60 0ZM835 496q30-20 60 0-30 20-60 0Z"/>
+    <path d="M800 476v104M774 594q26 14 52 0"/>
+    <path d="M748 666q52 30 104 0"/>
+  </g>
+  <g fill="#0B5FFF">
+    <circle cx="735" cy="496" r="7"/>
+    <circle cx="865" cy="496" r="7"/>
+  </g>
+
+  <!-- landmark graph -->
+  <g stroke="#0B5FFF" stroke-width="2" stroke-opacity=".55" fill="none">
+    <path d="M735 496 800 580 865 496M800 580 748 666M800 580 852 666M748 666 800 700 852 666"/>
+    <path d="M614 470 700 452M986 470 900 452"/>
+    <path d="M666 676q134 130 268 0"/>
+  </g>
+  <g fill="#0B5FFF">
+    <circle cx="800" cy="580" r="7"/><circle cx="748" cy="666" r="7"/><circle cx="852" cy="666" r="7"/>
+    <circle cx="800" cy="700" r="7"/><circle cx="614" cy="470" r="6"/><circle cx="986" cy="470" r="6"/>
+    <circle cx="700" cy="452" r="6"/><circle cx="900" cy="452" r="6"/>
+    <circle cx="666" cy="676" r="6"/><circle cx="934" cy="676" r="6"/>
+    <circle cx="800" cy="782" r="6"/>
+    <circle cx="800" cy="258" r="6"/>
+  </g>
+
+  <!-- scan line -->
+  <rect x="560" y="524" width="480" height="16" fill="#0B5FFF" fill-opacity=".10"/>
+  <path d="M560 532h480" stroke="#0B5FFF" stroke-width="2.5"/>
+
+  <!-- detection bracket -->
+  <g stroke="#0A1424" stroke-width="4" fill="none">
+    <path d="M560 300v-70h70M970 230h70v70M1040 800v70h-70M630 870h-70v-70"/>
+  </g>
+
+  <!-- readout -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <text x="1100" y="246" font-size="16" letter-spacing="3" fill="#7A8798">SUBJECT 01</text>
+    <text x="1100" y="300" font-size="48" fill="#0A1424">98.7<tspan font-size="26" fill="#0B5FFF">%</tspan></text>
+    <text x="1100" y="332" font-size="15" letter-spacing="3" fill="#7A8798">CONFIDENCE</text>
+    <path d="M1100 366h300" stroke="#DCE3EC" stroke-width="2"/>
+    <text x="1100" y="404" font-size="15" letter-spacing="3" fill="#7A8798">LANDMARKS  68</text>
+    <text x="1100" y="440" font-size="15" letter-spacing="3" fill="#7A8798">LATENCY    24 MS</text>
+  </g>
+
+  <g stroke="#0A1424" stroke-opacity=".22" stroke-width="2">
+    <path d="M200 926v20M300 926v20M400 926v20M500 926v20M600 926v20M700 926v20M800 926v20M900 926v20M1000 926v20M1100 926v20M1200 926v20M1300 926v20M1400 926v20"/>
+    <path d="M200 936h1200"/>
+  </g>
+  <text x="200" y="902" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="3" fill="#7A8798">REAL-TIME DETECTION</text>
+</svg>

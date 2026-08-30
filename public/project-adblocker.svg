@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Network traffic passing through a filter, with blocked requests">
+  <defs>
+    <pattern id="g3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0A1424" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <pattern id="G3" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M160 0H0V160" fill="none" stroke="#0B5FFF" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#FAFBFC"/>
+  <rect width="1600" height="1000" fill="url(#g3)"/>
+  <rect width="1600" height="1000" fill="url(#G3)"/>
+
+  <g stroke="#0B5FFF" stroke-opacity=".55" stroke-width="2" fill="none">
+    <path d="M40 76V40h36M1524 40h36v36M1560 924v36h-36M76 960H40v-36"/>
+  </g>
+
+  <!-- column labels -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="3" fill="#7A8798">
+    <text x="150" y="150">INBOUND</text>
+    <text x="800" y="150" text-anchor="middle">FILTER</text>
+    <text x="1450" y="150" text-anchor="end">ALLOWED</text>
+  </g>
+  <g stroke="#DCE3EC" stroke-width="2">
+    <path d="M150 176h330M660 176h280M1120 176h330"/>
+  </g>
+
+  <!-- traffic lanes -->
+  <g stroke-width="3">
+    <path d="M150 280h610" stroke="#0A1424" stroke-opacity=".35"/>
+    <path d="M150 400h610" stroke="#0A1424" stroke-opacity=".35"/>
+    <path d="M150 520h610" stroke="#0A1424" stroke-opacity=".35"/>
+    <path d="M150 640h610" stroke="#0A1424" stroke-opacity=".35"/>
+    <path d="M150 760h610" stroke="#0A1424" stroke-opacity=".35"/>
+    <!-- lanes that continue past the filter -->
+    <path d="M840 400h610" stroke="#0B5FFF"/>
+    <path d="M840 640h610" stroke="#0B5FFF"/>
+    <!-- lanes stopped at the filter -->
+    <path d="M840 280h60" stroke="#DCE3EC" stroke-dasharray="8 12"/>
+    <path d="M840 520h60" stroke="#DCE3EC" stroke-dasharray="8 12"/>
+    <path d="M840 760h60" stroke="#DCE3EC" stroke-dasharray="8 12"/>
+  </g>
+
+  <!-- inbound packets -->
+  <g fill="#FFFFFF" stroke="#3D4C63" stroke-width="3">
+    <rect x="196" y="264" width="30" height="30"/><rect x="316" y="264" width="30" height="30"/><rect x="436" y="264" width="30" height="30"/>
+    <rect x="236" y="384" width="30" height="30"/><rect x="376" y="384" width="30" height="30"/><rect x="516" y="384" width="30" height="30"/>
+    <rect x="196" y="504" width="30" height="30"/><rect x="336" y="504" width="30" height="30"/><rect x="476" y="504" width="30" height="30"/>
+    <rect x="256" y="624" width="30" height="30"/><rect x="396" y="624" width="30" height="30"/><rect x="536" y="624" width="30" height="30"/>
+    <rect x="216" y="744" width="30" height="30"/><rect x="356" y="744" width="30" height="30"/><rect x="496" y="744" width="30" height="30"/>
+  </g>
+
+  <!-- the filter -->
+  <rect x="760" y="200" width="80" height="640" fill="#FFFFFF" stroke="#0A1424" stroke-width="3"/>
+  <g stroke="#0B5FFF" stroke-width="3">
+    <path d="M760 240h80M760 280h80M760 320h80M760 360h80M760 400h80M760 440h80M760 480h80M760 520h80M760 560h80M760 600h80M760 640h80M760 680h80M760 720h80M760 760h80M760 800h80"/>
+  </g>
+  <rect x="760" y="200" width="80" height="640" fill="#0B5FFF" fill-opacity=".06"/>
+
+  <!-- blocked markers -->
+  <g stroke="#0A1424" stroke-width="4" stroke-linecap="round">
+    <path d="M916 266l28 28M944 266l-28 28"/>
+    <path d="M916 506l28 28M944 506l-28 28"/>
+    <path d="M916 746l28 28M944 746l-28 28"/>
+  </g>
+
+  <!-- allowed packets -->
+  <g fill="#0B5FFF" fill-opacity=".12" stroke="#0B5FFF" stroke-width="3">
+    <rect x="1010" y="384" width="30" height="30"/><rect x="1150" y="384" width="30" height="30"/><rect x="1290" y="384" width="30" height="30"/>
+    <rect x="1050" y="624" width="30" height="30"/><rect x="1190" y="624" width="30" height="30"/><rect x="1330" y="624" width="30" height="30"/>
+  </g>
+
+  <!-- counters -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+    <text x="150" y="906" font-size="46" fill="#0A1424">15</text>
+    <text x="150" y="940" font-size="15" letter-spacing="3" fill="#7A8798">REQUESTS</text>
+    <text x="760" y="906" font-size="46" fill="#0A1424">9</text>
+    <text x="760" y="940" font-size="15" letter-spacing="3" fill="#7A8798">BLOCKED</text>
+    <text x="1450" y="906" font-size="46" text-anchor="end" fill="#0B5FFF">6</text>
+    <text x="1450" y="940" font-size="15" letter-spacing="3" text-anchor="end" fill="#7A8798">PASSED</text>
+  </g>
+  <path d="M150 856h1300" stroke="#DCE3EC" stroke-width="2"/>
+</svg>

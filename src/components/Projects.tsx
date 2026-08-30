@@ -1,133 +1,67 @@
-import React, { useRef } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { motion } from "framer-motion";
-
-const textVariants = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
-};
-
-const imageVariants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
-};
-
-const projectList = [
-    {
-      category: "Desktop",
-      title: "WPF Utilities Suite",
-      tech: ["C#", "WPF", "Encryption", "WiX Toolset"],
-      color: "pink",
-      image: "wpf.png",
-      text: "Designed and built a suite of WPF utilities with MVVM architecture, encryption modules, and multithreading for heavy data tasks. Deployed with WiX installer for enterprise use."
-    },
-    {
-      category: "Desktop",
-      title: "Legacy System Bug Fixing + Modernization",
-      tech: ["C#", "C++/CLI", "SQLite", "Bentley OpenPlant Software"],
-      color: "green",
-      image: "legacy.png",
-      text: "Revamped and maintained legacy desktop applications, fixing critical bugs and enhancing performance. Integrated C++/CLI modules for CAD interoperability and optimized SQLite database operations. I also worked on creating 3D graphics of parts used in software."
-      },
-    {
-      category: "Desktop",
-      title: "Ad Blocking Tool",
-      tech: ["C#", ".NET Framework", "WinForms", "Window Services"],
-      color: "pink",
-      image: "adblocker.png",
-      text: "Developed a multithreaded ad-blocking solution combining a desktop UI with a Windows Service for system-wide filtering and monitoring."
-    },
-    {
-      category:"Desktop",
-      title: "Face Recognition AI",
-      tech: ["Python", "Dlib", "TensorFlow", "MTCNN"],
-      color: "cyan",
-      image: "facerecoginition.png",
-      text: "Developed real-time face detection and recognition modules with deep learning, optimized for cross-platform performance."
-    }
-  ];
-
-let globalIndex = 0;
+import React from "react";
+import { Section, SectionHeading, Reveal, CornerMarks, Tech } from "./ui/Blueprint";
+import { projects } from "../data/resume";
 
 const Projects: React.FC = () => {
   return (
-    <section
-      id="projects"
-      className="max-w-6xl py-24 px-6 mx-auto relative"
-    >
-      <h2 className="text-4xl font-bold text-cyan-400 mb-16 text-center">
-        Projects
-      </h2>
-      {["Desktop"].map((category) => (
-        <div key={category} className="mb-20">
-          <h3 className="text-2xl font-bold text-gray-700 mb-10 text-center">
-            {category} Applications
-          </h3>
+    <Section id="projects">
+      <SectionHeading
+        num="02"
+        label="Projects"
+        title="Selected work"
+        description="Desktop applications and systems built end to end: architecture, interface, performance, and deployment."
+      />
 
-          <div className="flex flex-col gap-16">
-            {projectList.filter((proj) => proj.category === category).map((proj) => {
-              const isEven = globalIndex % 2 === 0;
-              globalIndex++;
-              return (
-              <div
-                key={proj.title}
-                className={`flex flex-col md:flex-row items-center relative ${
-                    isEven ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
-              >
-                <motion.div
-                  className={`flex-1 max-w-md border-2 border-${proj.color}-400 bg-white p-6 rounded-lg text-left hover:shadow-lg relative z-10 ${
-                    isEven ? " md:-mr-12" : ""
-                  }`}
-                  variants={textVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false }}
-                >
-                  <h4 className={`text-2xl font-semibold text-${proj.color}-400`}>
-                    {proj.title}
-                  </h4>
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        {projects.map((proj, i) => (
+          <Reveal key={proj.id} delay={i * 0.06}>
+            <article className="bp-panel group flex h-full flex-col transition-colors duration-300 hover:border-blueprint/40">
+              <CornerMarks className="opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                  <div className="flex flex-wrap gap-2 mb-4 mt-4">
-                    {proj.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="border-2 border-gray-300 text-xs font-semibold px-3 py-1 rounded-md"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <p className="text-sm leading-relaxed text-gray-600">
-                    {proj.text}
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  className={`flex max-w-lg relative z-0 ${
-                    isEven ? "" : "md:-mr-12"
-                  }`}
-                  variants={imageVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false }}
-                >
-                  <img
-                    src={proj.image}
-                    alt={proj.title}
-                    className="rounded-lg shadow-lg w-full object-cover"
-                  />
-                </motion.div>
+              {/* plate header */}
+              <div className="flex items-center justify-between border-b border-rule px-5 py-3">
+                <span className="font-mono text-[11px] font-semibold tracking-label text-blueprint">
+                  {proj.index}
+                </span>
+                <span className="bp-label">{proj.meta}</span>
               </div>
-              )
-            })}
-          </div>
-        </div>
-      ))}
-    </section>
+
+              {/* drawing area */}
+              <div className="relative overflow-hidden border-b border-rule bg-paper">
+                <img
+                  src={proj.image}
+                  alt={proj.title}
+                  loading="lazy"
+                  className="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                />
+                {/* scanning highlight on hover */}
+                <span
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-blueprint/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  aria-hidden="true"
+                />
+              </div>
+
+              <div className="flex flex-1 flex-col px-6 py-6">
+                <h3 className="font-display text-xl font-semibold tracking-tight text-ink transition-colors duration-300 group-hover:text-blueprint">
+                  {proj.title}
+                </h3>
+
+                <p className="mt-3 flex-1 text-[14px] leading-relaxed text-ink-soft">
+                  {proj.text}
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2 border-t border-rule-soft pt-5">
+                  {proj.tech.map((t) => (
+                    <Tech key={t} label={t} />
+                  ))}
+                </div>
+              </div>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+    </Section>
   );
 };
-
 
 export default Projects;

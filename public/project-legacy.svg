@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Isometric wireframe of plant piping with flanges">
+  <defs>
+    <pattern id="g2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#0A1424" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <pattern id="G2" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M160 0H0V160" fill="none" stroke="#0B5FFF" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#FAFBFC"/>
+  <rect width="1600" height="1000" fill="url(#g2)"/>
+  <rect width="1600" height="1000" fill="url(#G2)"/>
+
+  <g stroke="#0B5FFF" stroke-opacity=".55" stroke-width="2" fill="none">
+    <path d="M40 76V40h36M1524 40h36v36M1560 924v36h-36M76 960H40v-36"/>
+  </g>
+
+  <!-- dashed model bounding box (isometric) -->
+  <g fill="none" stroke="#0B5FFF" stroke-opacity=".28" stroke-width="2" stroke-dasharray="10 12">
+    <path d="M300 560 800 272 1300 560 800 848Z"/>
+    <path d="M300 560v-170L800 102l500 288v170M800 848V678M800 102v170M300 390 800 678 1300 390"/>
+  </g>
+
+  <!-- piping run: three parallel pipes with elbows, isometric -->
+  <g fill="none" stroke="#0A1424" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M360 622 726 411"/>
+    <path d="M420 656 786 445"/>
+    <path d="M480 690 846 479"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round">
+    <path d="M360 622 726 411"/>
+    <path d="M420 656 786 445"/>
+    <path d="M480 690 846 479"/>
+  </g>
+
+  <!-- elbows turning up-right -->
+  <g fill="none" stroke="#0A1424" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M726 411q54-31 108 0l232 134"/>
+    <path d="M786 445q54-31 108 0l232 134"/>
+    <path d="M846 479q54-31 108 0l232 134"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round">
+    <path d="M726 411q54-31 108 0l232 134"/>
+    <path d="M786 445q54-31 108 0l232 134"/>
+    <path d="M846 479q54-31 108 0l232 134"/>
+  </g>
+
+  <!-- flanges (ellipses on the axis) -->
+  <g fill="#FFFFFF" stroke="#0B5FFF" stroke-width="4">
+    <ellipse cx="543" cy="518" rx="15" ry="27" transform="rotate(-30 543 518)"/>
+    <ellipse cx="603" cy="552" rx="15" ry="27" transform="rotate(-30 603 552)"/>
+    <ellipse cx="663" cy="586" rx="15" ry="27" transform="rotate(-30 663 586)"/>
+    <ellipse cx="1066" cy="545" rx="15" ry="27" transform="rotate(30 1066 545)"/>
+    <ellipse cx="1126" cy="579" rx="15" ry="27" transform="rotate(30 1126 579)"/>
+    <ellipse cx="1186" cy="613" rx="15" ry="27" transform="rotate(30 1186 613)"/>
+  </g>
+
+  <!-- open pipe ends -->
+  <g fill="#EDF1F6" stroke="#0A1424" stroke-width="4">
+    <ellipse cx="360" cy="622" rx="12" ry="22" transform="rotate(-30 360 622)"/>
+    <ellipse cx="420" cy="656" rx="12" ry="22" transform="rotate(-30 420 656)"/>
+    <ellipse cx="480" cy="690" rx="12" ry="22" transform="rotate(-30 480 690)"/>
+  </g>
+
+  <!-- vertex handles -->
+  <g fill="#FFFFFF" stroke="#0B5FFF" stroke-width="3">
+    <rect x="719" y="404" width="14" height="14"/>
+    <rect x="779" y="438" width="14" height="14"/>
+    <rect x="839" y="472" width="14" height="14"/>
+  </g>
+
+  <!-- axis gizmo -->
+  <g stroke-width="3" stroke-linecap="round">
+    <path d="M170 862 262 809" stroke="#0B5FFF"/>
+    <path d="M170 862 262 915" stroke="#3D4C63"/>
+    <path d="M170 862V754" stroke="#00B3A4"/>
+    <circle cx="170" cy="862" r="5" fill="#0A1424" stroke="none"/>
+  </g>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17">
+    <text x="272" y="806" fill="#0B5FFF">X</text>
+    <text x="272" y="922" fill="#3D4C63">Y</text>
+    <text x="156" y="740" fill="#00B3A4">Z</text>
+  </g>
+
+  <!-- dimension line -->
+  <g stroke="#7A8798" stroke-width="2">
+    <path d="M360 706v58M1186 706v58M372 742h802"/>
+    <path d="M372 734l-14 8 14 8M1174 734l14 8-14 8" fill="none"/>
+  </g>
+  <rect x="700" y="722" width="150" height="40" fill="#FAFBFC"/>
+  <text x="775" y="750" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17" letter-spacing="2" fill="#7A8798">DN 300</text>
+
+  <text x="1230" y="880" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16" letter-spacing="3" fill="#7A8798">ISO / PIPE RACK 04</text>
+</svg>
